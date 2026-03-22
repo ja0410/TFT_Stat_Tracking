@@ -64,7 +64,7 @@ def match_info(match_id, api_key):
     return response.json()
 
 # function with print statements for testing if needed
-def info_test(user, tag, api_key, puuid, game_info):
+def info_test(user, tag, api_key, puuid):
     print(user_puuid(user, tag, api_key))
     print(summoner_info(puuid, api_key))
     print(tft_matches(puuid, api_key))
@@ -83,7 +83,7 @@ if __name__ == '__main__':
         user = input('Username: ')
         # user input for summoner tag
         tag = input('Tag: ')
-        # attempt to retrieve summoner puuid via try
+        # attempt to retrieve summoner puuid via try block
         try:
             # set variable = to summoner puuid
             puuid = user_puuid(user, tag, api_key)
