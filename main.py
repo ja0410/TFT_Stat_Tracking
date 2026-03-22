@@ -93,4 +93,4 @@ if __name__ == '__main__':
             if participant.get('puuid') == puuid:
                 game_data[match_id] = participant
                 break
-        print(game_data)
+    print(game_data)
