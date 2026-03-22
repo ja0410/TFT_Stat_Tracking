@@ -68,7 +68,6 @@ def info_test(user, tag, api_key, puuid, game_info):
     print(user_puuid(user, tag, api_key))
     print(summoner_info(puuid, api_key))
     print(tft_matches(puuid, api_key))
-    print(game_info)
 
 
 if __name__ == '__main__':
