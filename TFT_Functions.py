@@ -2,8 +2,6 @@ import requests
 
 
 
-
-
 # after getting username and tag, get summoners unique puuid
 def user_puuid(user, tag, api_key):
     url = f"https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{user}/{tag}"
