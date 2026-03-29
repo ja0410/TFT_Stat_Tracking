@@ -56,5 +56,6 @@ if __name__ == '__main__':
                 break
     # print data to verify in test
     if env == 'test':
-        print(game_data)
+        match = match_ids[1]
+        print(game_data[match])
     match_avg_placement(game_data, env)
